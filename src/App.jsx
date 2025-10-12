@@ -7,19 +7,20 @@ import Trending from "./pages/Trending";
 import StableCoins from "./pages/StableCoins";
 import MemeCoins from "./pages/MemeCoins";
 import AllCoins from "./pages/AllCoins";
-import CoinReport from "./pages/CoinReport";
 import CoinDetails from "./pages/CoinDetails";
 import Login from "./pages/Login";
 import ChatAI from "./pages/ChatAI";
+
 function App() {
   return (
     <>
       <GlobalStyles />
-      <BrowserRouter>
+      <BrowserRouter basename="/cryptocurrency"> {/* required for GitHub Pages */}
         <Routes>
           {/* Public routes */}
           <Route index element={<CryptoLanding />} />
           <Route path="/login" element={<Login />} />
+
           {/* Protected/Layout routes */}
           <Route element={<AppLayout />}>
             <Route path="dashboard" element={<Dashboard />} />
