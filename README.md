@@ -1,16 +1,45 @@
-# React + Vite
+🧠 Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web platform that combines real-time cryptocurrency tracking, AI-powered explanations, and performance prediction — helping users understand the “why” behind market moves.
 
-Currently, two official plugins are available:
+We fetch live data from the CoinGecko API every 5 minutes, store and update it efficiently to reduce server overhead, and use OpenAI APIs to generate plain-language insights and forecasts for the next 7 days of any selected coin.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💡 Key Features
 
-## React Compiler
+Live Market Data: Real-time crypto prices, volume, and trends powered by CoinGecko API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+AI Explanations: OpenAI-powered chatbot that explains sudden price shifts in simple terms.
 
-## Expanding the ESLint configuration
+7-Day Prediction: Predicts short-term performance of selected coins using recent data patterns.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Smart Efficiency: Limited API calls (every 5 mins) to optimize performance and reduce load.
+
+Interactive Visuals: Dynamic charts built with Chart.js or Recharts for easy analysis.
+
+Custom Watchlist: Track selected coins and monitor market movements at a glance.
+
+🛠️ Tech Stack
+
+Frontend: React, HTML, CSS, Bootstrap, JavaScript
+Backend: Node.js, Express
+Database: PostgreSQL (for watchlists, preferences, and cached data)
+APIs: CoinGecko API (data) & OpenAI API (AI explanations, chatbot)
+Charts: Chart.js / Recharts
+
+⚙️ Working
+
+Data is fetched from CoinGecko every 5 minutes and stored in the database.
+
+AI models analyze price trends and generate easy-to-understand explanations.
+
+Users view live prices, charts, and short-term predictions in a single dashboard.
+
+📈 Example Query
+
+“Why did Bitcoin drop today?”
+→ The AI responds with: “Bitcoin fell 5% due to profit booking and a decline in trading volume following ETF news.”
+
+👨‍💻 Developed By
+
+Team Bhadrakali
+A group of innovators building smarter tools for understanding the crypto world.
