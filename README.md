@@ -42,4 +42,4 @@ Users view live prices, charts, and short-term predictions in a single dashboard
 👨‍💻 Developed By
 
 Team Bhadrakali
-A group of innovators building smarter tools for understanding the crypto world.
+A group of innovators.
