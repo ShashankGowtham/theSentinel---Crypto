@@ -30,11 +30,11 @@ const JWT_SECRET = "your-secret-key-change-this-in-production";
 const JWT_EXPIRES_IN = "7d";
 
 // --- HARDCODED API KEYS ---
-const GEMINI_API_KEY = "AIzaSyCfO_i0NcjhfI_0_zUhDZst6KoPYuOZ8Xs";
-const GNEWS_API_KEY = "5373e5420dc277e3fc35f3a4b6d191dd";
-const COVALENT_API_KEY = "cqt_rQFPWMxwVC4q9BHQByMQ7FYFxkX9";
+const GEMINI_API_KEY = "";
+const GNEWS_API_KEY = "";
+const COVALENT_API_KEY = "";
 const TAAPI_API_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbHVlIjoiNjhlOGM5YTg4MDZmZjE2NTFlNGYwMjNjIiwiaWF0IjoxNzYwMTc4MTAzLCJleHAiOjMzMjY0NjQyMTAzfQ.f-XVwtZFs0D12tcX0KINSOMvUsiuvH4MGUGXWdq90";
+  "";
 
 // --- GEMINI INITIALIZATION ---
 let geminiModel;
